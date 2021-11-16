@@ -6,14 +6,15 @@ using namespace std;
 class EncryptedString
 {
 public:
+	EncryptedString() {}
 	EncryptedString(string text);
 
 	string Decrypt();
 	string GetEncrypted();
 
 	static EncryptedString FromEncrypted(string text);
-
-	inline operator string() {
+	
+	operator string() {
 		return InternalDecrypt(_data);
 	}
 

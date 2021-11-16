@@ -10,6 +10,7 @@ namespace StringEncryptionCSharp
     {
         private string data;
 
+        public EncryptedString() { }
         public EncryptedString(string text) => data = Encrypt(text);
 
         /// <summary>
@@ -58,5 +59,7 @@ namespace StringEncryptionCSharp
         }
 
         public static implicit operator string(EncryptedString v) => v.Decrypt();
+
+        public static implicit operator EncryptedString(string v) => new EncryptedString(v);
     }
 }
