@@ -29,7 +29,11 @@ namespace StringEncryptionCSharp
 
                         Console.Clear();
                         Console.WriteLine("Encrypted (Copied to your clipboard): " + encrypted.GetEncrypted());
+						
+                        // Credits to equiman on StackOverflow for this class
+                        // Source: https://stackoverflow.com/a/51912933/12524368
                         WindowsClipboard.SetText(encrypted.GetEncrypted());
+						
                         Console.ReadKey(true);
                         break;
                     case ConsoleKey.D2:

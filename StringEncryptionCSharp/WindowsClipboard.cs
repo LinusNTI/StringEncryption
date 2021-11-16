@@ -3,6 +3,9 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Threading;
 
+// Credits to equiman on StackOverflow for this class
+// Source: https://stackoverflow.com/a/51912933/12524368
+
 namespace StringEncryptionCSharp
 {
     static class WindowsClipboard
