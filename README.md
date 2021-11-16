@@ -2,6 +2,9 @@
  
 Quick example of a easy to use encryption class for both C# and C++
 
+## How does this work
+It essentially works by setting the seed of the psuedo random number generator to always have an expected output and using this to encrypt the character bytes. A simple process overengineered to space and beyond. 
+
 ## Simple usage and assignments
 
 C++
